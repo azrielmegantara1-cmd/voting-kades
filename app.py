@@ -5,7 +5,7 @@ app = Flask(__name__)
 app.secret_key = "rahasia_desa_2025"
 
 # Ambil DATABASE_URL dari environment (nanti diisi Render)
-DATABASE_URL = os.environ.get('DATABASE_URL', 'postgresql://postgres:password@db.supabase.co:5432/postgres')
+DATABASE_URL = os.environ.get('DATABASE_URL', 'postgresql://postgres:@db.mmvioxnbayxkxgsgsewu.supabase.co:5432/postgres')
 
 @app.route('/')
 def home():
